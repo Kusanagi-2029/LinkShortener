@@ -1,0 +1,28 @@
+﻿@model ShortLinks
+@{
+    ViewData["Title"] = "Создать укороченную URL-ссылку";
+}
+
+<br />
+
+<div class="jumbotron">
+
+    <h1>Укорачиватель ссылок</h1>
+
+    <br />
+
+    <p>Введя длинный URL-адрес в текстовое поле ниже, мы создадим для вас короткий URL-адрес!</p>
+
+    <br />
+
+    <form asp-action="Create">
+        <div class="form-horizontal">
+            <div class="input-group input-group-lg">
+                <input asp-for="OriginalUrl" class="form-control" placeholder="Вставьте длинную ссылку..." />
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Укороченная ссылка</button>
+                </span>
+            </div>
+        </div>
+    </form>
+</div>
