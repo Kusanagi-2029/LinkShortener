@@ -11,7 +11,7 @@ public class LinkShortenerContext : DbContext
          declares a parameterless constructor" указывает на то, что класс ApplicationDbContext должен предоставлять 
          публичный конструктор с параметром типа DbContextOptions<ApplicationDbContext>. Это необходимо для передачи 
          конфигурации контекста из AddDbContext в сам контекст базы данных.
-         Для исправления этой ошибки вам необходимо изменить класс ApplicationDbContext, чтобы он предоставлял 
+         Для исправления этой ошибки нам необходимо изменить класс ApplicationDbContext, чтобы он предоставлял 
          требуемый конструктор и конфигурация контекста базы данных будет передаваться корректно из метода 
          AddDbContext в класс контекста.*/
     }
